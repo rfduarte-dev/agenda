@@ -1,0 +1,19 @@
+<%- include('includes/head') %>
+
+<section class="container">
+  <h1 class="title">Titulo</h1>
+
+  <p class="text">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, voluptatem
+    eius provident dolor optio alias natus porro, dignissimos id aspernatur amet
+    nesciunt, veniam ab delectus! Vel rem deserunt quas quibusdam!
+  </p>
+  <form action="/" class="form" method="POST">
+    <input type="hidden" name="_csrf" value="<%= csrfToken %>" />
+    <label for="input-test-1">Cliente <span>- Text</span></label>
+    <input type="text" id="input-test-1" name="cliente" />
+    <button class="btn">Enviar</button>
+  </form>
+</section>
+
+<%- include('includes/footer') %>
